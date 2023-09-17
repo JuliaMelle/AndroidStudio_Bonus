@@ -7,17 +7,12 @@ import android.widget.Button
 import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
-    private var mode : String = "";
     private var accumulatedValues: String = ""
     private var accumulatedValues2: Int = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val buttonPlus = findViewById<Button>(R.id.buttonPlus)
-        buttonPlus.setOnClickListener {
-            mode = "plus"
-        }
         val ButtonA = findViewById<Button>(R.id.buttonA)
         val ButtonB = findViewById<Button>(R.id.buttonB)
         val ButtonC = findViewById<Button>(R.id.buttonC)
